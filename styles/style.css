@@ -116,7 +116,7 @@
 
 .title {
   justify-self: start;
-  font-size: clamp(7.25rem, 7.1055rem + 0.6163vw, 7.5rem);
+  font-size: clamp(6.25rem, 7.1055rem + 0.6163vw, 6.5rem);
   line-height: clamp(5.75rem, 7.1055rem + 0.6163vw, 6rem);
   font-weight: 700;
   text-align: start;
