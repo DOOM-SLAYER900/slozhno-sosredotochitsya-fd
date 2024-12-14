@@ -48,14 +48,14 @@
       </nav>
       <h1 class="title">no focus</h1>
       <p class="header__subtitle">
-        Что делать, когда не можешь делать ничего <br>Или почему нам так сложно
-        сконцентрироваться, особенно когда очень надо
+        Что делать, когда не можешь делать ничего <br />Или почему нам так
+        сложно сконцентрироваться, особенно когда очень надо
       </p>
     </header>
     <main class="content">
       <section class="section section__concentration-hard">
         <h2 class="section__question">Почему сосредоточиться так сложно</h2>
-        <div class="section__explanation">
+        <article class="section__explanation">
           <h3 class="section__answer">Многозадачность</h3>
           <p class="section__text">
             Особенно сложно сосредоточиться, когда задач много и все они —
@@ -73,8 +73,8 @@
             стресса». Из-за этого мы работаем невнимательно: ошибаемся и быстро
             устаём.
           </p>
-        </div>
-        <div class="section__explanation">
+        </article>
+        <article class="section__explanation">
           <h3 class="section__answer">Дофамин</h3>
           <p class="section__text">
             С гормонами стресса всё понятно, но дальше — ещё интереснее. В нашей
@@ -86,11 +86,11 @@
             удовольствие. Получается замкнутый круг: чем больше отвлекаешься,
             тем больше удовольствия получаешь.
           </p>
-        </div>
+        </article>
       </section>
       <section class="section section__concentration-down">
         <h2 class="section__question">Что снижает концентрацию внимания?</h2>
-        <div class="section__explanation">
+        <article class="section__explanation">
           <h3 class="section__answer">Многозадачность</h3>
           <p class="section__text">
             Как концентрация может снижаться из-за… концентрации? Любая
@@ -100,8 +100,8 @@
             — невозможно. Концентрация — мышца, и она может не выдержать, если
             не давать ей отдохнуть.
           </p>
-        </div>
-        <div class="section__explanation">
+        </article>
+        <article class="section__explanation">
           <h3 class="section__answer">Еда</h3>
           <p class="section__text">
             «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
@@ -111,7 +111,7 @@
             заканчивается, мы чувствуем усталость и сонливость. И хотим ещё
             больше быстрых углеводов.
           </p>
-        </div>
+        </article>
         <div class="section__explanation">
           <h3 class="section__answer">Гаджеты</h3>
           <p class="section__text">
@@ -196,42 +196,52 @@
       </section>
       <section class="section section__images-gallery">
         <h3 class="section__answer">А можно в картинках?</h3>
-        <div class="images-gallery">
-          <img
-            src="./images/sunset.png"
-            alt="Рисунок в векторном стиле с изображением заката над морем и горами"
-            loading="lazy"
-            class="section__images-gallery-item sunset"
-          />
-          <img
-            src="./images/ice-cream.png"
-            alt="Милый рисунок мороженного"
-            loading="lazy"
-            class="section__images-gallery-item ice-cream"
-          />
-          <img
-            src="./images/tape.png"
-            alt="Рисунок в похожем на Vapor-wave стиле с изображением кассеты и элементов старых Windows"
-            loading="lazy"
-            class="section__images-gallery-item tape"
-          />
-          <img
-            src="./images/books.png"
-            alt="Рисунок с изображением высокой стопки разных книг и чашкой сверху"
-            loading="lazy"
-            class="section__images-gallery-item books"
-          />
-          <img
-            src="./images/street.png"
-            alt="Рисунок с преобладающими фиолетовыми цветами с изображением уютной улицы"
-            loading="lazy"
-            class="section__images-gallery-item street"
-          />
-        </div>
+        <ul class="images-gallery">
+          <li class="section__images-gallery-item sunset">
+            <img
+              src="./images/sunset.png"
+              alt="Рисунок в векторном стиле с изображением заката над морем и горами"
+              loading="lazy"
+              class="section__images-gallery-image"
+            />
+          </li>
+          <li class="section__images-gallery-item ice-cream">
+            <img
+              src="./images/ice-cream.png"
+              alt="Милый рисунок мороженного"
+              loading="lazy"
+              class="section__images-gallery-image ice-cream"
+            />
+          </li>
+          <li class="section__images-gallery-item tape">
+            <img
+              src="./images/tape.png"
+              alt="Рисунок в похожем на Vapor-wave стиле с изображением кассеты и элементов старых Windows"
+              loading="lazy"
+              class="section__images-gallery-image"
+            />
+          </li>
+          <li class="section__images-gallery-item books">
+            <img
+              src="./images/books.png"
+              alt="Рисунок с изображением высокой стопки разных книг и чашкой сверху"
+              loading="lazy"
+              class="section__images-gallery-image"
+            />
+          </li>
+          <li class="section__images-gallery-item street">
+            <img
+              src="./images/street.png"
+              alt="Рисунок с преобладающими фиолетовыми цветами с изображением уютной улицы"
+              loading="lazy"
+              class="section__images-gallery-image"
+            />
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer decorated-zone">
-      <h1 class="title">focus</h1>
+      <h5 class="title footer__title">focus</h5>
     </footer>
   </body>
 </html>

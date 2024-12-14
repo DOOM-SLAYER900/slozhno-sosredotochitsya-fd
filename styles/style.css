@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: "IBM Plex Mono", monospace, sans-serif;
   color: var(--text-color);
   background-image: url(../images/cover-image-dark.png);
   background-position: center;
@@ -28,12 +28,12 @@
   position: relative;
   inset: 0;
   height: 100vh;
-  min-height: 500px;
+  min-height: 100vh;
   width: 100%;
   display: grid;
   padding-inline: 10px;
   grid-template-columns: 100%;
-  grid-template-rows: 1fr 0.7fr 1fr;
+  grid-template-rows: 1.2fr 1fr 1fr;
   justify-items: start;
   align-items: center;
 }
@@ -71,17 +71,18 @@
 .decoration-element-text::after {
   content: "";
   display: block;
-  margin-top: -0.8em;
+  margin-top: -0.9em;
   margin-left: 2.5em;
-  inline-size: 0.2em;
-  block-size: 0.2em;
+  inline-size: 9px;
+  block-size: 9px;
   background-color: var(--accent-color);
   border-radius: 50%;
-  box-shadow: 0 0 5px 0.3em var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
 .header__theme-menu {
   justify-self: end;
+  padding-block-start: 3%;
 }
 
 .header__theme-menu-list {
@@ -95,7 +96,7 @@
   border: 0;
   padding-inline: 0.8em;
   text-align: center;
-  line-height: 1.5em;
+  line-height: 1.3em;
   text-transform: lowercase;
   color: var(--accent-color);
 }
@@ -104,29 +105,35 @@
   outline: var(--accent-hover-color) 1px solid;
 }
 
-.header__theme-menu-button:focus {
+.header__theme-menu-button:focus-visible {
   outline: none;
   border-block-end: var(--accent-color) 1px solid;
 }
 
 .header__theme-menu-button_active {
   outline: var(--accent-color) 1px solid;
+  pointer-events: none;
 }
 
 .title {
   justify-self: start;
   font-size: clamp(6.25rem, 7.1055rem + 0.6163vw, 6.5rem);
-  line-height: clamp(5.75rem, 7.1055rem + 0.6163vw, 6rem);
+  line-height: 0.85em;
   font-weight: 700;
   text-align: start;
   color: var(--title-text-color);
   text-shadow: 4px 4px var(--shadow-color);
 }
 
+.header .title {
+  padding-block-end: 10%;
+}
+
 .header__subtitle {
   background-color: var(--bg-accent-color);
   color: var(--accent-text-color);
   font-weight: 700;
+  margin-block-end: 14%;
 }
 
 .content {
@@ -165,13 +172,18 @@
   color: var(--accent-text-color);
 }
 
-.section__images-gallery {
+.section__images-gallery, .images-gallery {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 .section__images-gallery-item {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+.section__images-gallery-image {
   block-size: 100%;
   inline-size: 100%;
   object-fit: cover;
@@ -182,7 +194,7 @@
   position: relative;
   inset: 0;
   height: 100vh;
-  min-height: 500px;
+  min-height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -223,6 +235,7 @@
   .header .title {
     grid-area: title;
     margin-inline-start: -20px;
+    padding-block-end: 0;
   }
 
   .header__subtitle {
@@ -250,7 +263,7 @@
   .images-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.75fr 0.9fr 1.3fr;
+    grid-template-rows: 24% 29% 40%;
     grid-template-areas:
       "sunset sunset ice-cream"
       "tape books ice-cream"
@@ -293,6 +306,7 @@
   .header__theme-menu {
     justify-self: center;
     align-self: start;
+    padding: 0;
   }
   .header__theme-menu-list {
     flex-direction: row;
@@ -301,18 +315,22 @@
   .title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
-
   .section__concentration-down {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-auto-flow:row;
+    grid-auto-rows: 1fr;
   }
 
   .section__concentration-down .section__question {
-    grid-column: 1 / 2;
+    justify-self: start;
+    grid-column: 1 / 4;
     grid-row: 1 / 2;
+    inline-size: 33%;
   }
 
-  .section__concentration-down .section__explanation {
-    grid-row: 2;
+  .images-gallery {
+    grid-template-rows: 24.5% 29.5% 41%;
   }
 }
