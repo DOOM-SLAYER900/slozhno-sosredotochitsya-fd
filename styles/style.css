@@ -178,6 +178,10 @@
   gap: 10px;
 }
 
+.images-gallery {
+  gap: 5px;
+}
+
 .section__images-gallery-item {
   block-size: 100%;
   inline-size: 100%;
@@ -286,6 +290,10 @@
   }
   .street {
     grid-area: street;
+  }
+
+  .footer .title {
+    padding-block-end: 3%;
   }
 }
 
