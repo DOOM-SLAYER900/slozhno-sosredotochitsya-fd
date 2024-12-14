@@ -4,7 +4,6 @@
   gap: 40px;
   font-family: "IBM Plex Mono", sans-serif;
   color: var(--text-color);
-  background-color: var(--bg-color);
   background-image: url(../images/cover-image-dark.png);
   background-position: center;
   background-repeat: no-repeat;

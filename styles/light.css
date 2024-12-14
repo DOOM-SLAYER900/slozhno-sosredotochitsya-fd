@@ -1,5 +1,4 @@
 :root.theme-light {
-  --bg-color: #fff1f7;
   --bg-accent-color: #ff8dcb;
   --accent-color: #353430;
   --accent-hover-color: rgb(53 52 48 / 0.4);
@@ -19,7 +18,6 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-color: #fff1f7;
     --bg-accent-color: #ff8dcb;
     --accent-color: #353430;
     --accent-hover-color: rgb(53 52 48 / 0.4);
