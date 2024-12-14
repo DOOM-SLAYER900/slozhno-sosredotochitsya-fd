@@ -251,7 +251,7 @@
   .images-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.75fr 1fr 1.4fr;
+    grid-template-rows: 0.75fr 0.9fr 1.3fr;
     grid-template-areas:
       "sunset sunset ice-cream"
       "tape books ice-cream"
@@ -284,12 +284,12 @@
 }
 
 @media (width >= 1024px) {
+
   .header {
     grid-template-areas:
       "menu menu"
       "title title"
       ". subtitle";
-    grid-template-rows: 1fr 2fr 1fr;
   }
   .header__theme-menu {
     justify-self: center;
