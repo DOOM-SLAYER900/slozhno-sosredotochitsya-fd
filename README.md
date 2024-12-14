@@ -1,1 +1,1 @@
-git@github.com:DOOM-SLAYER900/slozhno-sosredotochitsya-fd.git
+https://github.com/DOOM-SLAYER900/slozhno-sosredotochitsya-fd.git
