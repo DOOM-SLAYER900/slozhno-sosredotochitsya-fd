@@ -9,7 +9,7 @@
   --title-text-color: #ffc2e6;
 }
 
-.theme-light header {
+.theme-light .page {
   background-image: url(../images/cover-image-light.png);
 }
 

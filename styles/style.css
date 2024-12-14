@@ -3,9 +3,13 @@
   flex-direction: column;
   gap: 40px;
   font-family: "IBM Plex Mono", sans-serif;
-  font-size: var(--font-size);
   color: var(--text-color);
   background-color: var(--bg-color);
+  background-image: url(../images/cover-image-dark.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .link {
@@ -33,10 +37,6 @@
   grid-template-rows: 1fr 0.7fr 1fr;
   justify-items: start;
   align-items: center;
-  background-image: url(../images/cover-image-dark.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .decorated-zone::before {
@@ -153,26 +153,17 @@
 .section__question {
   color: var(--accent-color);
   font-weight: 700;
-  font-size: inherit;
 }
 
 .section__answer {
   background-color: var(--bg-accent-color);
   color: var(--accent-text-color);
   font-weight: 700;
-  font-size: inherit;
-}
-
-.section__text, .section__answer-list-text {
-  font-weight: 400;
-  font-size: inherit;
 }
 
 .section__answer-list-title {
   background-color: var(--bg-accent-color);
   color: var(--accent-text-color);
-  font-weight: 400;
-  font-size: inherit;
 }
 
 .section__images-gallery {
@@ -230,10 +221,13 @@
     align-self: end;
   }
 
+  .title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
   .header .title {
     grid-area: title;
     margin-inline-start: -20px;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__subtitle {

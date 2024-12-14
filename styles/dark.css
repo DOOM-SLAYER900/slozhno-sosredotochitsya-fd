@@ -9,10 +9,6 @@
   --title-text-color: #db00ff;
 }
 
-.theme-dark header {
-  background-image: url(../images/cover-image-dark.png);
-}
-
 .theme-dark .decoration-element-text {
   display: block;
 }
