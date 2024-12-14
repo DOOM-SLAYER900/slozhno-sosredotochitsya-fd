@@ -284,12 +284,12 @@
 }
 
 @media (width >= 1024px) {
-
   .header {
     grid-template-areas:
       "menu menu"
       "title title"
       ". subtitle";
+    grid-template-rows: 1fr 2fr 1fr;
   }
   .header__theme-menu {
     justify-self: center;
